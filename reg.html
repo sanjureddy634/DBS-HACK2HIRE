@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width="device-width,initial=1">
+<style>
+body{
+font-family:"Roboto";
+background-color:#cda1d0;
+}
+.container{
+padding:50px;
+background-color:lightblue;
+}
+input[type=text],input[type=password],textarea{
+width:100%;
+padding:15px;
+margin:5px 0 22px 0;
+display:inline-block;
+border:none;
+background:#f1f1f1;
+}
+input[type=text]:focus,input[type=password]:focus{
+background-color:orange;
+outline:none;
+}
+div{
+padding:10px 0;
+}
+hr{
+border:1px solid #f1f1f1;
+margin-bottom:25px;
+}
+.regbtn{
+background-color:#4CAF50;
+color:white;
+padding:16px 20px;
+margin:8px 0;
+border:none;
+width:100%;
+opacity:0.9;
+}
+.regbtn:hover{
+opacity:1;
+}
+</style>
+</head>
+<body>
+<form method="POST" action="login.html">
+<div class="container">
+<center><h1>Passenger Registration Form</h1></center>
+<hr>
+<label>First Name</label>
+<input type="text" name="firstname" value="Firstname" size="20"required/>
+<label>Middle Name :</label>
+<input type="text" name="middlename" value="Middlename" size="20"required/>
+<label>Last Name :</label>
+<input type="text" name="lastname" value="Lastname" size="20"/>
+<div>
+<label>
+Airlines :
+</label>
+<select>
+<option value="Airlines">Airlines</option>
+<option value="International Airlines">International Airlines</option>
+<option value="Emirates Airlines">Emirates Airlines</option>
+<option value="Malaysia Airlines">Malaysia Airlines</option>
+<option value="British Airlines">British Airlines</option>
+<option value="Qatar Airlines">Qatar Airlines</option>
+<option value="Virgin Airlines">Virgin Airlines</option>
+<option value="Lufthansa Airlines">Lufthansa Airlines</option>
+<option value="Malindo Airlines">Malindo Airlines</option>
+<option value="singapore Airlines">singapore Airlines</option>
+</select>
+</div>
+<div>
+<label>
+Gender:
+</label><br>
+<input type="radio" value="Male" name="gender" checked>Male
+<input type="radio" value="Female" name="female" checked>Female
+<input type="radio" value="Other" name="other" checked>Other
+</div>
+<label>
+phone :
+</label>
+<input type="text" name="country code" value="+91" size="2"/>
+<input type="text" name="phone" size="10"required>
+Address
+
+<textarea cols="80" rows="5" value="address"required>
+</textarea>
+<label for="email"><b>Email</b></label>
+<input type="text" value="Enter email" name="email"required>
+<label for="psw"<b>Password</b></label>
+<input type="password" value="Enter Password" name="psw"required>
+
+<label for="psw-repeat"><b>Re-type Password</b>
+</label>
+
+<input type="password" value="Retype password" name="psw-repeat"required>
+
+<button type="Submit" class="regbtn">Register</button>
+</form>
+</body>
+</html>
+
